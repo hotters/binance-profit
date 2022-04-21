@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "profit-app": "apps/profit-app",
+    "profit-app-e2e": "apps/profit-app-e2e"
+  }
+}
