@@ -8,6 +8,6 @@ describe('profit-app', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome profit-app');
+    getGreeting().contains('Welcome to Binance Profit!');
   });
 });
