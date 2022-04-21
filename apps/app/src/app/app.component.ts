@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@binance-profit/api-interfaces';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'binance-profit-root',
@@ -8,6 +7,7 @@ import { Message } from '@binance-profit/api-interfaces';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+  hello$ = this.service.getProfit();
+
+  constructor(private service: AppService) {}
 }
